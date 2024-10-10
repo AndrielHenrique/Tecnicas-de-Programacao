@@ -44,8 +44,8 @@
             Console.Write("Informe um nome da Disciplina: ");
             disc = Console.ReadLine();
 
-            if (disc.ToUpper() != "FIM") ;
-            disciplinas.Add(disc);
+            if (disc.ToUpper() != "FIM") 
+                 disciplinas.Add(disc);
 
         } while (disc.ToUpper() != "FIM");
 
