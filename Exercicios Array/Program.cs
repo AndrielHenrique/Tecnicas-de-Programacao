@@ -4,9 +4,9 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-        // exercicio1();
-        // exercicio2();
-        // exercicio3();
+        exercicio1();
+        exercicio2();
+        exercicio3();
 
         int[,] matriz = new int[,]{
             { 1, 0, 0, 0, 0 },
@@ -22,10 +22,10 @@ internal class Program
             { 0, 0, 0, 1, 0 },
             { 0, 0, 0, 0, 1 }
         };
-        // exercicio4(matriz);
-        // exercicio4(matrizNIdentidade);
+        exercicio4(matriz);
+        exercicio4(matrizNIdentidade);
 
-        //exercicio5();
+        exercicio5();
 
     }
     static void exercicio1()
@@ -35,15 +35,14 @@ internal class Program
         float media = 0;
         int TAM = 10;
 
-        foreach (int i in valores)
+        for (int i = 0; i < valores.Length; i++)
         {
-
-            Console.WriteLine("Informe o " + (i + 1) + "valor: ");
+            Console.WriteLine("Informe o " + (i + 1) + " valor: ");
             valores[i] = Convert.ToInt32(Console.ReadLine());
             media += valores[i];
 
         }
-        Console.WriteLine(media);
+        Console.WriteLine("A media deu: " + media);
 
         Console.WriteLine($"A media dos valores deu: {media / TAM}");
     }
@@ -56,7 +55,7 @@ internal class Program
 
         for (int i = 0; i < valores.Length; i++)
         {
-            Console.WriteLine("informe o " + (i + 1) + "valor: ");
+            Console.WriteLine("informe o " + (i + 1) + " valor: ");
             valores[i] = Convert.ToInt32(Console.ReadLine());
 
         }
@@ -91,12 +90,12 @@ internal class Program
                 matriz[i, j] = Convert.ToInt32(Console.ReadLine());
             }
         }
-
+        Console.WriteLine("\nMatriz preenchida: ");
         for (int i = 0; i < matriz.GetLength(0); i++)
         {
             for (int j = 0; j < matriz.GetLength(1); j++)
             {
-                Console.WriteLine(matriz[i, j] + " ");
+                Console.Write(matriz[i, j] + " ");
             }
             Console.WriteLine();
         }
@@ -119,8 +118,8 @@ internal class Program
             for (int j = 0; j < matriz.GetLength(0); j++)
                 somaColuna += matriz[i, j];
 
-            Console.WriteLine("Soma das Colunas:" + somaColuna);
-            Console.WriteLine("Media da soma das Colunas: " + (float)somaColuna / matriz.GetLength(1));
+            Console.WriteLine("Soma das Coluna [" + i + "]: " + somaColuna);
+            Console.WriteLine("Media da soma das Colunas[" + i + "]: " + (float)somaColuna / matriz.GetLength(0));
             Console.WriteLine();
         }
         for (int i = 0; i < matriz.GetLength(0); i++)
@@ -180,8 +179,49 @@ internal class Program
 
     static void exercicio5()
     {
-        Console.WriteLine("5. Faça um programa em C# que leia uma matriz de tamanho NxM quaisquer (vocês podem definir M e N). Em seguida, crie a matriz transposta à matriz lida. Exiba ambas.\n• Seja A uma matriz, A^t é a inversão de linhas e colunas de A.Assim, se A é uma matriz 3x2, A^t será uma matriz 2x3")
+        Console.WriteLine("5. Faça um programa em C# que leia uma matriz de tamanho NxM quaisquer (vocês podem definir M e N). Em seguida, crie a matriz transposta à matriz lida. Exiba ambas.\n• Seja A uma matriz, A^t é a inversão de linhas e colunas de A.Assim, se A é uma matriz 3x2, A^t será uma matriz 2x3");
 
+        Console.WriteLine("Informe o numero de linhas da Matriz: ");
+        int nLinhas = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Informe o numero de colunas da Matriz: ");
+        int nColunas = Convert.ToInt32(Console.ReadLine());
 
+        int[,] matriz = new int[nLinhas, nColunas];
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            for (int j = 0; j < matriz.GetLength(1); j++)
+            {
+                Console.WriteLine("Informe um valor para a linha [" + i + "] e para a coluna [" + j + "]: ");
+                matriz[i, j] = Convert.ToInt32(Console.ReadLine());
+            }
+        }
+        int[,] matrizT = new int[nColunas, nLinhas];
+
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            for (int j = 0; j < matriz.GetLength(1); j++)
+            {
+                matrizT[j, i] = matriz[i, j];
+            }
+        }
+        Console.WriteLine("Matriz: ");
+        for (int i = 0; i < matriz.GetLength(0); i++)
+        {
+            for (int j = 0; j < matriz.GetLength(1); j++)
+            {
+                Console.Write(matriz[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine("Matriz Transposta: ");
+        for (int i = 0; i < matrizT.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrizT.GetLength(1); j++)
+            {
+                Console.Write(matrizT[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
     }
+
 }
