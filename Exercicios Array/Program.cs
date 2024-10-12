@@ -4,6 +4,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
+
         exercicio1();
         exercicio2();
         exercicio3();
@@ -42,7 +43,7 @@ internal class Program
             media += valores[i];
 
         }
-        Console.WriteLine("A media deu: " + media);
+        Console.WriteLine("A soma dos valores deu: " + media);
 
         Console.WriteLine($"A media dos valores deu: {media / TAM}");
     }
@@ -116,7 +117,7 @@ internal class Program
         {
             somaColuna = 0;
             for (int j = 0; j < matriz.GetLength(0); j++)
-                somaColuna += matriz[i, j];
+                somaColuna += matriz[j, i];
 
             Console.WriteLine("Soma das Coluna [" + i + "]: " + somaColuna);
             Console.WriteLine("Media da soma das Colunas[" + i + "]: " + (float)somaColuna / matriz.GetLength(0));
