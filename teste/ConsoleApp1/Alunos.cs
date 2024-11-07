@@ -61,7 +61,7 @@ namespace ConsoleApp1
                     Console.WriteLine("Reprovado");
             }
 
-            
+
         }
         public void Main(string[] args)
         {
