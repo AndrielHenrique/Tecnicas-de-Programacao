@@ -14,13 +14,13 @@ namespace ConsoleApp1
             TaxaSaque = s;
         }
 
-        public override void AtribuirSaldo(double valor)
+        public override void SacarValor(double valor)
         {
-            double valorCTaxa = valor - TaxaSaque;
+            double valorCTaxa = valor + TaxaSaque;
             if (Saldo >= valorCTaxa)
             {
-                Saldo += valor;
-                Console.WriteLine($"{valor} debitado da conta, saldo atual: {Saldo}");
+                Saldo -= valorCTaxa;
+                Console.WriteLine($"{valorCTaxa} debitado da conta, saldo atual: {Saldo}");
             }
             else
                 Console.WriteLine("Saldo insuficiente para debitar");
