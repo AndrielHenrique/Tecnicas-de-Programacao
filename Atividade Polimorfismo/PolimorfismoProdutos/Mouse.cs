@@ -4,19 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CestaDeCompras1
+namespace PolimorfismoProdutos
 {
-    public class Guitarra : Produtos
+    public class Mouse : Produto
     {
-
-        public Guitarra(string nome, double preco) : base(nome, preco) {
-        }
-
+        public Mouse(string nome, double preco): base(nome, preco) { }
 
         public override void ReajustarPreco()
         {
-            this.Preco = Preco * 0.05;
+            Preco += Preco * 0.05;
         }
-
     }
 }

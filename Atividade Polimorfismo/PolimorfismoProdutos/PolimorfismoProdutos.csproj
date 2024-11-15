@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C6B928A-0836-406B-BE4C-A7C1400CFB29}</ProjectGuid>
+    <ProjectGuid>{CF3C9B45-344A-4692-BCF6-0389D757B0E6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CestaDeCompras1</RootNamespace>
-    <AssemblyName>CestaDeCompras1</AssemblyName>
+    <RootNamespace>PolimorfismoProdutos</RootNamespace>
+    <AssemblyName>PolimorfismoProdutos</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CestaDeCompras.cs" />
+    <Compile Include="Mouse.cs" />
+    <Compile Include="Notebook.cs" />
+    <Compile Include="Produto.cs" />
+    <Compile Include="ProdutoCopia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teclado.cs" />
+    <Compile Include="Televisor.cs" />
+    <Compile Include="VideoGames.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

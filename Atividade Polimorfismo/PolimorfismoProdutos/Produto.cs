@@ -4,24 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CestaDeCompras1
+namespace PolimorfismoProdutos
 {
-    public abstract class Produtos
+    public abstract class Produto
     {
-        public string Nome {  get; set; }
-        public double Preco {  get; set; }
+        public string Nome { get; set; }
+        public double Preco { get; set; }
 
-        public Produtos (string nome, double preco)
+        public Produto(string nome, double preco)
         {
             Nome = nome;
             Preco = preco;
         }
 
         public abstract void ReajustarPreco();
-
         public virtual void ExibirProduto()
         {
-            Console.WriteLine($"Nome do produto: {Nome}, Preco do Produto: {Preco}");
+            Console.WriteLine($"Nome do Produto: {Nome}\n Preco do Produto: {Preco}");
         }
+
     }
 }

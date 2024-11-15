@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CestaDeCompras1", "CestaDeCompras1.csproj", "{2C6B928A-0836-406B-BE4C-A7C1400CFB29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolimorfismoProdutos", "PolimorfismoProdutos.csproj", "{CF3C9B45-344A-4692-BCF6-0389D757B0E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2C6B928A-0836-406B-BE4C-A7C1400CFB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C6B928A-0836-406B-BE4C-A7C1400CFB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C6B928A-0836-406B-BE4C-A7C1400CFB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C6B928A-0836-406B-BE4C-A7C1400CFB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3C9B45-344A-4692-BCF6-0389D757B0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3C9B45-344A-4692-BCF6-0389D757B0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3C9B45-344A-4692-BCF6-0389D757B0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3C9B45-344A-4692-BCF6-0389D757B0E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C91991CA-EE35-4A8C-A5C7-D783B4E241A1}
+		SolutionGuid = {120DB8FA-1972-484E-9BE1-ADC595F3A82C}
 	EndGlobalSection
 EndGlobal

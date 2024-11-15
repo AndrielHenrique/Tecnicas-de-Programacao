@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CestaDeCompras1
+namespace PolimorfismoProdutos
 {
-    public class DVD : Produtos
+    public class VideoGames : Produto
     {
-        public DVD(string nome, double preco) : base(nome, preco) { }
+        public VideoGames(string nome, double preco): base(nome, preco) { }
 
         public override void ReajustarPreco()
         {
-            this.Preco = Preco * 0.1;
+            Preco += Preco * 0.015;
         }
     }
 }
